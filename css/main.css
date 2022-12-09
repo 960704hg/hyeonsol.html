@@ -1,0 +1,467 @@
+body {
+    color: 444444;
+}
+
+.inner,
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.tit {
+    line-height: 1;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.sec {
+    padding: 100px 0;
+}
+
+/* 세팅 css */
+/* *{
+    outilne:1px solid #333;
+}*/
+
+.slick-track,
+.slick-track {
+    transition-delay: 0.03s;
+}
+
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: auto;
+    z-index: 999;
+}
+
+.header .inner {
+    position: relative;
+}
+
+.header h1 {
+    padding: 15px;
+    text-align: center;
+}
+
+.header h1 a img {
+    width: 70px;
+}
+
+.header .gnb {
+    line-height: 100px;
+    color: rab(248, 248, 237);
+}
+
+.header .gnb .left_category {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header .gnb .left_category>li {
+    padding: 0 30px 0 0;
+}
+
+.header.gnb p {
+    position: absolute;
+    line-height: 1.65;
+    top: 50%;
+    left: 830px;
+    transform: translate(-50%, -50%);
+
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.header .gnb .right_category {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header .gnb .right_category>li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    margin: 0 30px;
+    background: rgb(248, 248, 237);
+}
+
+/* header 영역*/
+
+/*main_mainSlide*/
+
+.mainVisual .mainSlide figure {
+    position: relative;
+    height: 700px;
+}
+
+.mainVisual .mainSlide .itm01 {
+    background: url(../img/slide-home-0002_911-GT302.jpg)no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .itm02 {
+    background: url(../img/porsche-normal.jpg)no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .itm03 {
+    background: url(../img/porsche-normal00.jpg)no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .inner {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(248, 248, 237);
+}
+
+.mainVisual .mainSlide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+
+    background: none;
+    border: none;
+    font-size: 0;
+
+    width: 30px;
+    height: 30px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.mainVisual .mainSlide .slick-prev {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin: 0 0 0 -700px;
+}
+
+.mainVisual .mainSlide .slick-next {
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 0 0 0 700px;
+}
+
+.mainVisual .mainSlide .slick-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin: 0 0 0 600px;
+    transform: translate(-100%, 0);
+}
+
+.mainVisual .mainSlide .slick-dots>li {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.mainVisual .mainSlide .slick-dots>li.slick-active {
+    background: #fff;
+}
+
+.mainSlide .mainSlide .slick-dots>li button {
+    display: none;
+}
+
+.mainVisual .mainSlide .inner strong {
+    display: inline-block;
+    margin: 0 0 15px 0;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.mainVisual .mainSlide .inner p {
+    font-weight: 300;
+    letter-spacing: 14px;
+}
+
+/* main content */
+.content h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.content p {
+    font-weight: 300;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.content .inner {
+    display: flex;
+    gap: 30px;
+}
+
+.content .inner figure {
+    flex: 1;
+    text-align: center;
+}
+
+.content .inner .img01 {
+    background: url(../img/porsche-small001.webp) no-repeat center center/cover;
+    width: 380px;
+    height: 380px;
+    margin: 0 0 20px 0;
+    transition: 0.45s;
+}
+
+.content .inner .img02 {
+    background: url(../img/porsche-small\ 002.webp) no-repeat center center/cover;
+    width: 380px;
+    height: 380px;
+    margin: 0 0 20px 0;
+    transition: 0.45s;
+}
+
+.content .inner .img03 {
+    background: url(../img/porsche-small001.webp) no-repeat center center/cover;
+    width: 380px;
+    height: 380px;
+    margin: 0 0 20px 0;
+    transition: 0.45s;
+}
+
+.content .inner .img02:hover {
+    background: url(../img/porsche-image.webp) no-repeat center center/cover;
+}
+
+.content .inner .img03 {
+    background: url(../img/porsche-zoom106.webp) no-repeat center center/cover;
+}
+
+.content .inner .img03:hover {
+    background: url(../img/porsche-zoom106.webp) no-repeat center center/cover;
+}
+
+/* main banner */
+
+.banner {
+    background: url(../img/Macan\ Turbo09.jpg) no-repeat fixed center center/cover;
+    text-align: center;
+    filter: grayscale(1);
+    color: rgb(248, 248, 237);
+}
+
+.banner p {
+    font-weight: 300;
+    margin: 0 0 25px 0;
+}
+
+.banner span {
+    vertical-align: 2px;
+    margin: 0 5px 0 0;
+}
+
+/* sec_slide */
+
+.bottle .inner h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.bottle .inner>p {
+    font-weight: 300;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.product_slide figure {
+    padding: 10px 20px;
+}
+
+.bottle .product_slide figure img {
+    width: 100%;
+
+    object-fit: cover;
+    margin: 0 0 20px 0;
+    transition: 0.3s;
+}
+
+
+.bottle .product_slide figure.slick-center img {
+    transform: scale(1.1);
+}
+
+.bottle .product_slide figure strong {
+    display: block;
+    text-align: center;
+}
+
+.bottle .product_slide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+
+    background: none;
+    border: none;
+    font-size: 0;
+
+    width: 30px;
+    height: 30px;
+
+    border-top: 4px double #333;
+    border-left: 4px double #333;
+}
+
+.bottle .product_slide .slick-prev {
+    transform: rotate(-45deg);
+    margin: 0 0 0 -700px;
+}
+
+.bottle .product_slide .slick-next {
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 0 0 0 700px;
+}
+
+.bottle .product_slide .slick-dots {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.bottle .product_slide .slick-dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #666;
+    margin: 0 8px;
+    border-radius: 50%;
+}
+
+.bottle .product_slide .slick-dots li button {
+    display: none;
+}
+
+.bottle .product_slide .slick-dots li.slick-active {
+    background: #f00;
+}
+
+/* grid */
+
+.mainGrid {
+    background: rgb(248, 248, 237);
+}
+
+.mainGrid h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.mainGrid p {
+    font-weight: 300;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.mainGrid .grid {
+    position: relative;
+    display: grid;
+    gap: 30px;
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.mainGrid figure {
+    width: 100%;
+    height: 290px;
+}
+
+
+.mainGrid .grid span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    font-size: 70px;
+    font-weight: 900;
+    color: rgb(7, 55, 94);
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
+
+
+/* footer */
+.footer {
+    background: #666;
+    padding: 20px 0;
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.footer-sec {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: space-between;
+}
+
+
+.map {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.footer .left li {
+    display: flex;
+}
+
+.footer .left li:nth-child(5) {
+    font-weight: 500;
+}
+
+.footer .left li~li::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background: #555;
+}
+
+
+
+.footer .left address {
+    font-style: normal;
+}
+
+.footer .right {
+    flex: 1;
+    display: flex;
+    gap: 30px;
+    text-align: right;
+}
+
+.footer .right strong {
+    display: inline-block;
+    margin: 0 10px 0;
+    line-height: 30px;
+}
+
+.footer .right p {
+    line-height: 20px;
+}
